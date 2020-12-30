@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "7eb43117-d376-4e00-990e-8dc21cf02b5f",
+		"name": "StudentPortal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AcademicRecord",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteEnrollment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"courseId\": 511,\r\n    \"studentId\": 16\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/add-enrollment.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"add-enrollment.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Record",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"enrollmentId\": \"660\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/delete-enrollment.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"delete-enrollment.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EditProfile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"city\": \"Warwick\",\r\n    \"contact\": \"9998086464\",\r\n    \"country\": \"USA\",\r\n    \"dob\": \"1995-08-08\",\r\n    \"econtact\": \"8887996666\",\r\n    \"email\": \"merry@user.com\",\r\n    \"fname\": \"Merry\",\r\n    \"lname\": \"rry\",\r\n    \"saddress\": \"Somewhere in the world\",\r\n    \"state\": \"RI\",\r\n    \"username\": \"test_user4\",\r\n    \"zipcode\": \"02886\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/edit-profile.php/?studentId=25208",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"edit-profile.php",
+						""
+					],
+					"query": [
+						{
+							"key": "studentId",
+							"value": "25208"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NewUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"city\": \"Warwick\",\r\n    \"contact\": \"9998086464\",\r\n    \"country\": \"USA\",\r\n    \"dob\": \"1995-08-08\",\r\n    \"econtact\": \"8887996666\",\r\n    \"email\": \"merry@user.com\",\r\n    \"fname\": \"Merry\",\r\n    \"lname\": \"User\",\r\n    \"password\": \"test\",\r\n    \"pswrepeat\": \"test\",\r\n    \"saddress\": \"Somewhere in the world\",\r\n    \"state\": \"RI\",\r\n    \"username\": \"test_user4\",\r\n    \"zipcode\": \"02886\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/new-user.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"new-user.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Forgot-password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"merry@user.com\",\r\n    \"password\": \"test1\",\r\n    \"pswrepeat\": \"test1\",\r\n    \"username\": \"test_user4\",\r\n    \"zipcode\": \"02886\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/forgot-password.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"forgot-password.php"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
